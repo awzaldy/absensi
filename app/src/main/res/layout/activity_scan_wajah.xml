@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+
+    <LinearLayout
+        android:id="@+id/LinearLayout1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="25dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="25dp"
+            android:layout_marginTop="15dp"
+            android:fontFamily="@font/raleway"
+            android:text="ABSEN"
+            android:textAlignment="center"
+            android:textSize="25sp"
+            android:textColor="@color/black"
+            android:tint="#FFFFFF"/>
+
+    </LinearLayout>
+
+    <FrameLayout
+        android:id="@+id/container"
+        android:layout_width="350dp"
+        android:layout_height="400dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.250000002">
+        <Button
+            android:id="@+id/swap_camera_button"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginStart="290dp"
+            android:layout_marginEnd="290dp"
+            android:layout_marginRight="290dp"
+            android:background="@drawable/cam"
+            android:backgroundTint="@color/teal_200"
+            android:elevation="1dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            tools:layout_conversion_absoluteHeight="63dp"
+            tools:layout_conversion_absoluteWidth="62dp" />
+
+        <androidx.camera.view.PreviewView
+            android:id="@+id/previewView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+        </androidx.camera.view.PreviewView>
+    </FrameLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/container">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="25dp"
+            android:layout_marginTop="15dp"
+            android:fontFamily="@font/raleway"
+            android:text="Anda Terdeteksi Sebagai"
+            android:textAlignment="center"
+            android:textSize="15sp"
+            android:textColor="@color/black"
+            android:tint="#FFFFFF"/>
+
+        <TextView
+            android:id="@+id/nama_pegawai"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="15dp"
+            android:fontFamily="@font/raleway"
+            android:text="Tidak Mengenali Wajah"
+            android:textAlignment="center"
+            android:textSize="25sp"
+            android:textColor="@color/black"
+            android:tint="#FFFFFF"/>
+
+        <LinearLayout
+            android:id="@+id/linearLayout2"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:gravity="center_horizontal"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginTop="20dp"
+            app:layout_constraintTop_toBottomOf="@+id/container">
+
+            <Button
+                android:id="@+id/go_absen"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:backgroundTint="@color/blue_eb"
+                android:rotation="0"
+                android:rotationX="0"
+                android:rotationY="0"
+                android:text="ABSEN"
+                android:textColor="@color/white"
+                android:textAlignment="center"
+                android:visibility="visible"
+                tools:visibility="visible"
+                android:layout_marginRight="30dp"/>
+
+            <Button
+                android:id="@+id/kembali_menuUtama"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:rotation="0"
+                android:rotationX="0"
+                android:rotationY="0"
+                android:text="kembali"
+                android:textColor="@color/white"
+                android:textAlignment="center"
+                android:visibility="visible"
+                tools:visibility="visible"
+                android:backgroundTint="@android:color/holo_red_dark"
+                />
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

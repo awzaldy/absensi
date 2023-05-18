@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+
+    <FrameLayout
+        android:id="@+id/container"
+        android:layout_width="match_parent"
+        android:layout_height="450dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0"
+        android:background="#277abe">
+
+        <ImageView
+            android:layout_width="250dp"
+            android:layout_height="100dp"
+            android:layout_marginBottom="120dp"
+            android:src="@drawable/eb_name_logo_white"
+            android:layout_gravity="center"
+            />
+
+        <LinearLayout
+            android:id="@+id/LinearLayout1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="150dp"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <TextClock
+                android:id="@+id/textClock"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:format12Hour="hh:mm:ss a"
+                android:gravity="center_horizontal"
+                android:textColor="@color/white"
+                android:textSize="75sp"
+                android:textStyle="bold"/>
+
+            <TextView
+                android:id="@+id/date_time"
+                android:layout_width="match_parent"
+                android:layout_height="25dp"
+                android:layout_marginTop="15dp"
+                android:fontFamily="@font/raleway"
+                android:text="PLAYLIST"
+                android:textAlignment="center"
+                android:textSize="20sp"
+                android:textColor="@color/white"
+                android:tint="#FFFFFF"/>
+        </LinearLayout>
+    </FrameLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_weight="0"
+        app:layout_constraintTop_toBottomOf="@+id/container">
+
+        <Button
+            android:id="@+id/absen_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/round_bg"
+            android:rotation="0"
+            android:rotationX="0"
+            android:rotationY="0"
+            android:text="Absen"
+            android:textSize="20dp"
+            android:textColor="@color/white"
+            android:textAlignment="center"
+            android:visibility="visible"
+            tools:visibility="visible"/>
+    </LinearLayout>
+    
+    <LinearLayout
+        android:id="@+id/linearLayout2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="80dp"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_gravity="bottom"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout"
+        >
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="25dp"
+            android:layout_marginTop="15dp"
+            android:fontFamily="@font/raleway"
+            android:text="Belum daftarkan wajah?"
+            android:textAlignment="center"
+            android:textSize="15sp"
+            android:textColor="@color/black"
+            android:tint="#FFFFFF"/>
+
+        <TextView
+            android:id="@+id/daftar_button"
+            android:layout_width="match_parent"
+            android:layout_height="25dp"
+            android:layout_marginTop="15dp"
+            android:fontFamily="@font/raleway"
+            android:text=" Daftarkan"
+            android:textAlignment="center"
+            android:textSize="15sp"
+            android:textColor="@color/blue_eb"
+            android:tint="#FFFFFF"/>
+
+    </LinearLayout>
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

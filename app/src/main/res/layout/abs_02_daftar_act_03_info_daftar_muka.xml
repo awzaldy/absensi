@@ -1,0 +1,202 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_marginTop="70dp"
+        android:paddingHorizontal="50dp"
+        >
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Hampir Selesai"
+            android:gravity="start"
+            android:textSize="25dp"
+            android:fontFamily="@font/raleway_medium"
+            android:textColor="@color/black"
+            android:layout_marginBottom="15dp"
+            />
+
+        <TextView
+            android:layout_width="330dp"
+            android:layout_height="wrap_content"
+            android:text="Anda tinggal melakukan pemindahan wajah agar bisa menjalankan absesnsi"
+            android:fontFamily="@font/raleway"
+            android:textColor="@color/grey"
+            android:gravity="start"
+            android:layout_marginTop="5dp"
+            android:textSize="14dp"
+            />
+
+
+
+    </LinearLayout>
+
+
+    <FrameLayout
+        android:id="@+id/container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:padding="30dp"
+            android:orientation="vertical">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:orientation="horizontal"
+                app:layout_anchor="@+id/container"
+                android:paddingVertical="20dp"
+                app:layout_anchorGravity="center">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <ImageView
+                        android:layout_width="100dp"
+                        android:layout_height="100dp"
+                        android:src="@drawable/a" />
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:paddingHorizontal="5dp"
+                    android:orientation="vertical">
+
+                    <!-- Content 1 -->
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:background="#CEF9E7"
+                        android:orientation="horizontal"
+                        android:layout_gravity="start"
+                        android:padding="5dp">
+
+                        <ImageView
+                            android:layout_width="12dp"
+                            android:layout_height="match_parent"
+                            android:layout_marginRight="6dp"
+                            android:src="@drawable/checkmark" />
+
+                        <TextView
+                            android:id="@+id/textViewa"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/raleway"
+                            android:text="Benar"
+                            android:textColor="#0FE389" />
+
+                    </LinearLayout>
+
+                    <TextView
+                        android:layout_marginTop="20dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:fontFamily="@font/raleway"
+                        android:textSize="13dp"
+                        android:hint="Wajah telihat jelas, tidak tertutupi, dan berada dalam pencahayaan yang cukup" />
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:orientation="horizontal"
+                app:layout_anchor="@+id/container"
+                android:paddingVertical="20dp"
+                android:layout_marginTop="50dp"
+                app:layout_anchorGravity="center">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <ImageView
+                        android:layout_width="100dp"
+                        android:layout_height="100dp"
+                        android:src="@drawable/b" />
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:paddingHorizontal="5dp"
+                    android:orientation="vertical">
+
+                    <!-- Content 1 -->
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:background="#FFDEE6"
+                        android:orientation="horizontal"
+                        android:layout_gravity="start"
+                        android:padding="5dp">
+
+                        <ImageView
+                            android:layout_width="12dp"
+                            android:layout_height="match_parent"
+                            android:layout_marginRight="6dp"
+                            android:src="@drawable/xmark" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/raleway"
+                            android:text="Benar"
+                            android:textColor="#FF5D87" />
+
+                    </LinearLayout>
+
+                    <TextView
+                        android:layout_marginTop="20dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:fontFamily="@font/raleway"
+                        android:textSize="13dp"
+                        android:hint="Wajah telihat jelas, tidak tertutupi, dan berada dalam pencahayaan yang cukup" />
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+    </FrameLayout>
+
+
+       
+        
+
+  
+
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>
